@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-TW">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="sureCSS.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script>
+            var map;
+            function initialize() {
+              var mapOptions = {
+                zoom: 8,
+                center: new google.maps.LatLng(-34.397, 150.644)
+              };
+              map = new google.maps.Map(document.getElementById('map-canvas'),
+                  mapOptions);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <header>
+            <!--
+            <div class="header_menu">
+                <ul>
+                    <li>introduce</li>
+                    <li>menu</li>
+                    <li>location</li>
+                    <li>album</li>
+                </ul>
+            </div>
+            -->
+            <div class="header_circle"></div>
+        </header>
+        <article style="background-image:url(http://placehold.it/500x500);height:40vh;padding-top:190px">
+            <div >
+                <p class="title" >果然</p>
+                <p style="font-size:20px;">用果汁改變世界</p>
+            </div>
+
+        </article>
+        <article>
+            <div class="title">menu</div>
+            <ul style="width:70vw">
+                <li style="border-width:1px;border-style:inset;margin: 10px auto;padding:10px 0;">
+                    <span><img src="http://placehold.it/200x200" alt=""></span>
+                    <span><p>蘋果汁</p><p>這裡是說明</p><p>這裡是售價</p></span>
+                </li>
+                <li style="border-width:1px;border-style:inset;margin: 10px auto;padding:10px 0;">
+                    <div><img src="http://placehold.it/200x200" alt=""></div>
+                    <div><p>蘋果汁</p><p>這裡是說明</p><p>這裡是售價</p></div>
+                </li>
+                <li style="border-width:1px;border-style:inset;margin: 10px auto;padding:10px 0;">
+                    <div><img src="http://placehold.it/200x200" alt=""></div>
+                    <div><p>蘋果汁</p><p>這裡是說明</p><p>這裡是售價</p></div>
+                </li>
+                <li style="border-width:1px;border-style:inset;margin: 10px auto;padding:10px 0;">
+                    <div><img src="http://placehold.it/200x200" alt=""></div>
+                    <div><p>蘋果汁</p><p>這裡是說明</p><p>這裡是售價</p></div>
+                </li>
+                <li style="border-width:1px;border-style:inset;margin: 10px auto;padding:10px 0;">
+                    <div><img src="http://placehold.it/200x200" alt=""></div>
+                    <div><p>蘋果汁</p><p>這裡是說明</p><p>這裡是售價</p></div>
+                </li>
+                <li style="border-width:1px;border-style:inset;margin: 10px auto;padding:10px 0;">
+                    <div><img src="http://placehold.it/200x200" alt=""></div>
+                    <div><p>蘋果汁</p><p>這裡是說明</p><p>這裡是售價</p></div>
+                </li>
+            </ul>
+
+        </article>
+        <article style="position: relative;padding:0;">
+            <div id="map-canvas"></div>
+            <div style="position: absolute;top:10px;">這被放日期</div>
+        </article>
+        <article>
+            <div class="title">活動</div>
+            <ul class="pic">
+                <li style="margin-bottom:10px"><img src="http://placehold.it/200x200" alt=""></li>
+                <li style="margin-bottom:10px"><img src="http://placehold.it/200x200" alt=""></li>
+                <li style="margin-bottom:10px"><img src="http://placehold.it/200x200" alt=""></li>
+            </ul>
+        </article>
+        <article>
+            <div class="title">追縱我們</div>
+            <ul style="height: 200px;width: 80vw;">
+                <li class="float_l" style="width:33%"><span class="fa-stack fa-5x">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x"></i>
+</span></li>
+                <li class="float_l" style="width:33%">
+      <i class="fa fa-instagram fa-5x"></i></li>
+                <li class="float_l" style="width:33%"><span class="fa-stack fa-5x">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-google-plus fa-stack-1x"></i>
+</span></li>
+            </ul>
+        </article>
+        <footer>
+            <div><img src="http://placehold.it/80x80" alt="" style="float:right"></div>
+        </footer>
+
+    </body>
+</html>
